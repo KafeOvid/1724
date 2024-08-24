@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 35px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height:50px
+  }
+  
+  .logo {
+    height: 70px;
+  }
+  
+  .header-content {
+    text-align: center;
+  }
+  
+  .header-content h1 {
+    margin: 0;
+    font-size: 35px;
+  }
+  
+  .header-content p {
+    margin: 0;
+    font-size: 17px;
+    color: #6c757d;
+  }
+  
