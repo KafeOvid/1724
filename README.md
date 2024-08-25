@@ -22,10 +22,6 @@ To get started with this project, follow these steps:
     ```bash
     npm install
     ```
-   or
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ## Usage
 
@@ -33,4 +29,4 @@ Provide examples of how to use the project. Include code snippets if necessary:
 
 ```bash
 # Example command or usage
-npm start
+npm run dev
