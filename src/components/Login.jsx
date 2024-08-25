@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import '../styles/Login.css';
+=======
+import '../styles/Login.css'; // Create a CSS file for styling
+>>>>>>> d3619b1692f74ce5601ef6a7a95e6cad4a5a2c14
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -7,6 +11,10 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+<<<<<<< HEAD
+=======
+    // Handle login logic here
+>>>>>>> d3619b1692f74ce5601ef6a7a95e6cad4a5a2c14
     console.log('Login:', email, password);
   };
 
