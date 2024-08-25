@@ -22,6 +22,10 @@ To get started with this project, follow these steps:
     ```bash
     npm install
     ```
+4. To start
+   ```bash
+    npm run dev
+    ```
 
 ## Usage
 
