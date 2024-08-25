@@ -1,19 +1,20 @@
+// src/components/AdministratorLogin.jsx
 import React, { useState } from 'react';
-import '../styles/Login.css'; // Create a CSS file for styling
+import '../styles/LoginForm.css'; // Use your CSS for styling
 
-const Login = () => {
+const AdministratorLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle login logic here
-    console.log('Login:', email, password);
+    console.log('Administrator Login:', email, password);
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
+    <div className="login-form-container">
+      <h2>Administrator Login</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="email">Email:</label>
         <input
@@ -37,4 +38,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default AdministratorLogin;
