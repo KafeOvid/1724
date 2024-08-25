@@ -1,27 +1,26 @@
-// src/components/EmployeeLogin.jsx
 import React, { useState } from 'react';
 import '../styles/LoginForm.css'; // Use your CSS for styling
 
 const EmployeeLogin = () => {
-  const [email, setEmail] = useState('');
+  const [userID, setUserID] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle login logic here
-    console.log('Employee Login:', email, password);
+    console.log('Employee Login:', userID, password);
   };
 
   return (
     <div className="login-form-container">
       <h2>Employee Login</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="userID">User ID:</label>
         <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          type="text"
+          id="userID"
+          value={userID}
+          onChange={(e) => setUserID(e.target.value)}
           required
         />
         <label htmlFor="password">Password:</label>

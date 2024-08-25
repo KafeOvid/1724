@@ -64,5 +64,6 @@
 .footer-bottom p {
   font-size: 14px;
   color: #666;
-  margin: 0; /* Remove default margin to keep it centered */
+  margin: 0; 
+  font-weight: 600;
 }

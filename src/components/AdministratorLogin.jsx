@@ -1,27 +1,26 @@
-// src/components/AdministratorLogin.jsx
 import React, { useState } from 'react';
 import '../styles/LoginForm.css'; // Use your CSS for styling
 
 const AdministratorLogin = () => {
-  const [email, setEmail] = useState('');
+  const [userID, setUserID] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle login logic here
-    console.log('Administrator Login:', email, password);
+    console.log('Administrator Login:', userID, password);
   };
 
   return (
     <div className="login-form-container">
       <h2>Administrator Login</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="userID">User ID:</label>
         <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          type="text"
+          id="userID"
+          value={userID}
+          onChange={(e) => setUserID(e.target.value)}
           required
         />
         <label htmlFor="password">Password:</label>

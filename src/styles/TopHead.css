@@ -8,12 +8,17 @@
 }
 
 /* Font Size Controls */
+.font-size-controls {
+  display: flex; /* Ensure buttons are displayed in a row */
+  gap: 5px; /* Add space between buttons */
+}
+
 .font-size-controls button {
   background-color: #007bff;
   color: #fff;
   border: none;
   padding: 5px 10px;
-  margin: 0 5px;
+  margin: 0;
   cursor: pointer;
   font-size: 16px;
   border-radius: 4px;

@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 import '../styles/TopHead.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaSun, FaMoon } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 
 const TopHead = () => {
   const [fontSize, setFontSize] = useState(16);
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const increaseFontSize = () => {
-    setFontSize(fontSize + 2);
-    document.documentElement.style.fontSize = `${fontSize + 2}px`;
+    const newSize = fontSize + 2;
+    setFontSize(newSize);
+    document.documentElement.style.setProperty('--font-size', `${newSize}px`);
   };
 
   const decreaseFontSize = () => {
-    setFontSize(fontSize - 2);
-    document.documentElement.style.fontSize = `${fontSize - 2}px`;
+    const newSize = fontSize - 2;
+    setFontSize(newSize);
+    document.documentElement.style.setProperty('--font-size', `${newSize}px`);
   };
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
     document.body.classList.toggle('dark-mode');
   };
 
@@ -30,7 +30,7 @@ const TopHead = () => {
       </div>
       <div className="dark-mode-toggle">
         <button onClick={toggleDarkMode}>
-          {isDarkMode ? <FaSun /> : <FaMoon />}
+          {document.body.classList.contains('dark-mode') ? <FaSun /> : <FaMoon />}
         </button>
       </div>
       <div className="auth-buttons">
