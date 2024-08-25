@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
-import '../styles/Signup.css';
-=======
 import '../styles/Signup.css'; // Create a CSS file for styling
->>>>>>> d3619b1692f74ce5601ef6a7a95e6cad4a5a2c14
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -13,10 +9,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password === confirmPassword) {
-<<<<<<< HEAD
-=======
       // Handle signup logic here
->>>>>>> d3619b1692f74ce5601ef6a7a95e6cad4a5a2c14
       console.log('Signup:', email, password);
     } else {
       alert("Passwords don't match");
