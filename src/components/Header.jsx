@@ -1,14 +1,14 @@
 import React from 'react';
-import '../styles/Header.css'; // Create a CSS file for styling
-import logo from '../assets/logo.png'; // Corrected path
+import '../styles/Header.css'; 
+import logo from '../assets/logo.png';
 
 const Header = () => {
   return (
     <header className="header">
       <img src={logo} alt="India Gov Logo" className="logo" />
       <div className="header-content">
-        <h1>india.gov.in</h1>
-        <p>national portal of india</p>
+        <h1>Ministry of</h1>s
+        <p>Housing and Urban Affairs</p>
       </div>
     </header>
   );

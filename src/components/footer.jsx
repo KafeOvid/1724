@@ -22,7 +22,9 @@ const Footer = () => {
         <div className="footer-section">
           <h2>Follow Us</h2>
           <a href="https://twitter.com/india" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <br></br>
           <a href="https://facebook.com/india" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <br></br>
           <a href="https://linkedin.com/company/india" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>

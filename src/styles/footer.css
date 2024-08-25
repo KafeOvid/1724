@@ -1,52 +1,68 @@
 .footer {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-top: 1px solid #e1e1e1;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
-  }
-  
-  .footer-section h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p {
-    margin: 0 0 10px;
-  }
-  
-  .footer-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-section a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .footer-section a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #6c757d;
-  }
-  
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the footer content within the footer */
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.footer-section a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  text-align: center; /* Center the text */
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #666;
+  margin: 0; /* Remove default margin to keep it centered */
+}

@@ -1,29 +1,28 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f8f9fa;
-    padding: 35px 30px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height:50px
-  }
-  
-  .logo {
-    height: 70px;
-  }
-  
-  .header-content {
-    text-align: center;
-  }
-  
-  .header-content h1 {
-    margin: 0;
-    font-size: 35px;
-  }
-  
-  .header-content p {
-    margin: 0;
-    font-size: 17px;
-    color: #6c757d;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa; /* Light background color */
+  padding: 35px 40px; /* 35px vertical padding, 40px horizontal padding */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  height: 70px; /* Adjusted height to accommodate logo and content */
+}
+
+.logo {
+  height: 70px; /* Maintain logo size */
+}
+
+.header-content {
+  text-align: center; /* Center text inside header-content */
+}
+
+.header-content h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 35px; /* Font size for heading */
+}
+
+.header-content p {
+  margin: 0; /* Remove default margin */
+  font-size: 17px; /* Font size for paragraph */
+  color: #6c757d; /* Light grey color for text */
+}

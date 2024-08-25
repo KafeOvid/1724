@@ -1,10 +1,10 @@
 import React from 'react';
+import TopHead from './components/TopHead';
 import Header from './components/Header';
-import SearchBar from './components/SearchBar';
 import Banner from './components/Banner';
-import ActivitiesInitiatives from './components/ActivitiesInitiatives';
+import About from './components/About';
+import FooterTop from './components/FooterTop';
 import Footer from './components/footer';
-import TopHead from './components/TopHead'
 import './App.css';
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <TopHead />
       <Header />
-      <SearchBar />
       <Banner />
-      <ActivitiesInitiatives />
+      <About /> 
+      <FooterTop />
       <Footer/>
     </div>
   );
