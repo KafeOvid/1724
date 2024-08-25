@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/TopHead.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaSun, FaMoon } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const TopHead = () => {
   const [fontSize, setFontSize] = useState(16);
@@ -33,8 +34,8 @@ const TopHead = () => {
         </button>
       </div>
       <div className="auth-buttons">
-        <button className="login-button">Login</button>
-        <button className="signup-button">Signup</button>
+        <Link to="/login"><button className="login-button">Login</button></Link>
+        <Link to="/signup"><button className="signup-button">Signup</button></Link>
       </div>
     </div>
   );

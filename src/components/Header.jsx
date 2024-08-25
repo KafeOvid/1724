@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <img src={logo} alt="India Gov Logo" className="logo" />
       <div className="header-content">
-        <h1>Ministry of</h1>s
+        <h1>Ministry of</h1>
         <p>Housing and Urban Affairs</p>
       </div>
     </header>
